@@ -1,6 +1,10 @@
 [package]
 name = "users-server"
 version = "0.1.0"
-authors = ["pkolevatyh"]
+authors = ["seb@ukr.net"]
 
 [dependencies]
+nickel = "*"
+rustc-serialize = "*"
+rust-sqlite = "*"
+time = "*"
