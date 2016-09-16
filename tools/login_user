@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -X POST -d '{"name":"john", "password":"p@ssword"}' http://localhost:6000/user/login
