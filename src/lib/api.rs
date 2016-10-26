@@ -2,14 +2,15 @@
 use nickel::Request;
 use nickel::{Nickel, HttpRouter, JsonBody};
 use rustc_serialize::json;
-use messages::UserDesc;
-use db::{process, CMD};
+use messages::{UserDesc, CMD};
+use db::process;
 
 pub fn run(url : &str) {
     let mut server = Nickel::new();
     server.post("/user/create", middleware!{ |request, response| handle(CMD::CREATE, request) });
     server.post("/user/remove", middleware!{ |request, response| handle(CMD::REMOVE, request) });
-    server.post("/user/login",  middleware!{ |request, response| handle(CMD::LOGIN,  request) });
+    server.post("/user/exists", middleware!{ |request, response| handle(CMD::EXISTS, request) });
+
     server.listen(url);
 }
 

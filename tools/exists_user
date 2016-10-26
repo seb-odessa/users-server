@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. user_json
+
+curl -X POST -d "$JSON" http://localhost:6000/user/exists
+echo

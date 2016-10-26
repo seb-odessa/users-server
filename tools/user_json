@@ -1,0 +1,17 @@
+#!/bin/bash
+
+USER=$1
+PASS=$2
+
+if [ -z "$USER" ]
+then
+    USER="john"
+fi
+
+if [ -z "$PASS" ]
+then
+    PASS="password"
+fi
+
+JSON="{\"name\":\"${USER}\", \"password\":\"${PASS}\"}"
+

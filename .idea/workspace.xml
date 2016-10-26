@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="696ed388-5454-4c39-b206-c7c8f05b8cf5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Cargo__users_server_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Cargo__users_server_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/users-server.iml" afterPath="$PROJECT_DIR$/.idea/users-server.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/users-server/main.rs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/login_user" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.db" afterPath="$PROJECT_DIR$/users.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cargo.toml" afterPath="$PROJECT_DIR$/Cargo.toml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/api.rs" afterPath="$PROJECT_DIR$/src/lib/api.rs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/db.rs" afterPath="$PROJECT_DIR$/src/lib/db.rs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/lib.rs" afterPath="$PROJECT_DIR$/src/lib/lib.rs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/messages.rs" afterPath="$PROJECT_DIR$/src/lib/messages.rs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.rs" afterPath="$PROJECT_DIR$/src/main.rs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/create_user" afterPath="$PROJECT_DIR$/tools/create_user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/remove_user" afterPath="$PROJECT_DIR$/tools/remove_user" />
     </list>
     <ignored path="users-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,19 +34,25 @@
       <file leaf-file-name="main.rs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.rs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db.rs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/db.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="n#process#0" expanded="false" />
+                <element signature="n#connect#0" expanded="false" />
+                <element signature="n#user_create#0" expanded="false" />
+                <element signature="n#user_remove#0" expanded="false" />
+                <element signature="n#user_exists#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.rs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messages.rs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/messages.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="36">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -74,15 +80,9 @@
       <file leaf-file-name="api.rs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/api.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-              <folding>
-                <marker date="1477473928167" expanded="true" signature="107:115" ph="{...}" />
-                <marker date="1477473928167" expanded="true" signature="165:522" ph="{...}" />
-                <marker date="1477473928167" expanded="true" signature="246:298" ph="{...}" />
-                <marker date="1477473928167" expanded="true" signature="344:396" ph="{...}" />
-                <marker date="1477473928167" expanded="true" signature="442:494" ph="{...}" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,6 +110,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/lib/db.rs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/lib/api.rs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -117,10 +118,10 @@
       <list>
         <option value="$PROJECT_DIR$/Cargo.toml" />
         <option value="$PROJECT_DIR$/src/lib/lib.rs" />
-        <option value="$PROJECT_DIR$/src/lib/db.rs" />
-        <option value="$PROJECT_DIR$/src/main.rs" />
         <option value="$PROJECT_DIR$/src/lib/api.rs" />
+        <option value="$PROJECT_DIR$/src/main.rs" />
         <option value="$PROJECT_DIR$/src/lib/messages.rs" />
+        <option value="$PROJECT_DIR$/src/lib/db.rs" />
       </list>
     </option>
   </component>
@@ -399,8 +400,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20433436" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39628482" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -452,28 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/api.rs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding>
-            <marker date="1477473928167" expanded="true" signature="107:115" ph="{...}" />
-            <marker date="1477473928167" expanded="true" signature="165:522" ph="{...}" />
-            <marker date="1477473928167" expanded="true" signature="246:298" ph="{...}" />
-            <marker date="1477473928167" expanded="true" signature="344:396" ph="{...}" />
-            <marker date="1477473928167" expanded="true" signature="442:494" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -482,19 +461,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/db.rs">
+    <entry file="file://$PROJECT_DIR$/src/lib/api.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/messages.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        <state relative-caret-position="36">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/db.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="n#process#0" expanded="false" />
+            <element signature="n#connect#0" expanded="false" />
+            <element signature="n#user_create#0" expanded="false" />
+            <element signature="n#user_remove#0" expanded="false" />
+            <element signature="n#user_exists#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
