@@ -1,10 +1,14 @@
 [package]
-name = "users-server"
-version = "0.1.0"
-authors = ["seb@ukr.net"]
+    name = "users-server"
+    version = "0.1.0"
+    authors = ["seb@ukr.net"]
+
+[lib]
+    name = "lib"
+    path = "src/lib/lib.rs"
 
 [dependencies]
-nickel = "*"
-rustc-serialize = "*"
-rusqlite = "*"
-time = "*"
+    nickel = "*"
+    rustc-serialize = "*"
+    rusqlite = "*"
+    time = "*"
